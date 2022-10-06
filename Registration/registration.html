@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <link rel="icon" href="./settings.png" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between" style="background-color: #e3f2fd;">
+            <a class="navbar-brand d-flex" href="#">
+                <div class="ml-1">
+                    <img src="./settings.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                </div>
+                <div class="ml-1 d-none d-sm-block icon">
+                    ProNoteBook
+                </div>
+            </a>
+            <div class="navbar-brand d-flex home-btn text-light">
+                <div class="ml-1">
+                    <i class="fas fa-home"></i>
+                     Task
+                </div>
+            </div>
+           <div class="">
+            <a href="#" id="sing-up-link" class="btn btn-outline-success text-light my-2 my-sm-0" >Sing In</a>
+            <a href="#" id="log-in-link" class="btn btn-outline-success text-light my-2 my-sm-0" >Sing Up</a>   
+          </div>
+</nav>
+
+<!-- Sing Un and Sing Up -->
+<section>
+   <div class="container mt-2">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <div class="get_alert_edite">
+                       
+            </div>
+        </div>
+    </div>
+    <div class="row singUpForm d-none">
+         <div class="col-lg-6 col-sm-12 d-sm-block d-none">
+             <img src="./log.png" class="img-fluid" alt="Lovepik_com-450092228- modern flat illustration of firm registration.png">
+         </div>
+         <div class="col-lg-6  col-sm-12 d-flex justify-content-center">
+            <div class="card card-design" >
+                <div class="card-body">           
+                       <!-- First Form -->
+                        <h5 class="card-title text-center my-2 sing-text-logo">SING UP FOR FREE</h5>
+                         <hr>
+                         <br>
+                       <form id="addform">
+                        
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="form-group ">
+                                    <label for="exampleInputName">UserName</label>
+                                    <input type="text" class="form-control" id="exampleInputName1" name="UserName" placeholder="Enter UserName">
+                                    <div class="valid-feedback">
+                                       
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="exampleInputPhone">Phone Number</label>
+                                    <input type="number" class="form-control" id="exampleInputPhone" name="Phone" aria-describedby="phoneHelp" placeholder="019xxxxxxxx">
+                                    <div class="valid-feedback">
+                                      
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="exampleInputaddress">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputAddress" name="Password" aria-describedby="addressHelp" placeholder="*******">
+                                    <div class="valid-feedback ">
+                                      
+                                    </div>
+                                </div>
+                               <div class="form-check">
+                                <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                              </div>
+                              <br>
+                            </div>
+                           
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="form-group">
+                                    <input type="submit"  id="addsubmit" class="btn btn-primary" value="Create a new account"></input>          
+                                </div>  
+                            </div>
+                         </div>
+                        
+                       </form>
+                        <br>
+                        <div class="row">
+                        <div class="col col-lg-12 d-flex justify-content-end">
+                            <a href="#" id="sing-up-link"><span class="text-success"> Already have an account?</span><span class="text-success font-weight-bold"> Log In</span></a>
+                        </div>
+                    </div>
+                </div>          
+            </div> 
+            <div class="load d-none">
+                    <div class="loader">
+
+                    </div>
+            </div>                     
+         </div>
+    </div>
+
+<!-- Sing In -->
+    <div class="row singInForm  vh-75 justify-content-center align-items-center">
+        <div class="col-lg-6 col-sm-12 d-sm-block d-none">
+            <img src="./log2.png" class="img-fluid" alt="Lovepik_com-450092228- modern flat illustration of firm registration.png">
+       </div>
+       <div class="col-lg-6  col-sm-12 d-flex justify-content-center mt-4">
+           <div class="card card-designe">
+            <div class="card-body">           
+                   <!-- First Form -->
+                    <h5 class="card-title text-center my-2 sing-text-logo">SING IN</h5>
+                     <hr>
+                     <div class="get_alert">
+                       
+                      </div>
+                   <form action="../Home/home.html" id="log-in">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="form-group">
+                                <label for="exampleInputPhone">Phone Number</label>
+                                <input type="text" class="form-control" id="exampleInputPhone" name="Phone" aria-describedby="phoneHelp" placeholder="019xxxxxxxx">
+                                <div class="valid-feedback ">
+                                      
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="form-group">
+                                <label for="exampleInputaddress">Password</label>
+                                <input type="password" class="form-control" id="exampleInputAddress" name="Password" aria-describedby="addressHelp" placeholder="******">
+                                <div class="valid-feedback ">
+                                      
+                                </div>
+                            </div>
+                           <div class="form-check">
+                            <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                          </div>
+                          <br>
+                          <br>
+                        </div>
+                       
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="form-group">
+                                <input type="submit"  id="joinus" class="btn btn-primary" value="Join us">     
+                            </div>  
+                        </div>
+                     </div>
+                    
+                   </form>
+                    <br>
+                    <div class="row">
+                    <div class="col col-lg-12 d-flex justify-content-end">
+                        <a href="#" id="log-in-link"><span class="text-success"> Don't have an account?</span><span class="text-success font-weight-bold"> Sing Up</span></a>
+                    </div>
+                </div>
+            </div>          
+           </div> 
+           <div class="singIn_load d-none">
+              <div class="singIn_loader">
+
+               </div>
+           </div> 
+       </div>
+    </div>
+
+
+   </div>
+</section>
+
+<Script>
+    // Switching div
+     const switch_sing_Ups=document.querySelectorAll("#sing-up-link");
+     const switch_sing_Ins=document.querySelectorAll("#log-in-link")
+
+     const singUp=document.querySelector(".singUpForm")
+     const singIn=document.querySelector(".singInForm")
+
+   // Switching listener
+      switch_sing_Ins.forEach((switch_sing_In)=>{
+        switch_sing_In.addEventListener('click',function(){
+            singIn.classList.add("d-none")
+            singUp.classList.remove("d-none")
+        })
+      })
+   // Switching listener
+      switch_sing_Ups.forEach((switch_sing_Up)=>{
+        switch_sing_Up.addEventListener('click',function(){
+            singUp.classList.add("d-none")
+            singIn.classList.remove("d-none")
+        })
+      })
+   
+
+    
+</Script>
+
+<script type="module" src="./res.js"> </script>
+</body>
+</html>

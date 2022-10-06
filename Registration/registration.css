@@ -1,0 +1,73 @@
+
+.card-design,.card-designe{
+    box-shadow: 5px 10px #888888;
+    background-color: #3498db07;
+}
+.card-design:hover,.card-designe:hover{
+  box-shadow: 7px 12px #888888;
+}
+
+#log-in-link{
+   text-decoration: none;
+}
+#sing-up-link{
+    text-decoration: none;
+}
+
+.load{
+    position:absolute;
+    width: 95%;
+    height: 100%;
+}
+.singIn_load{
+   position: absolute;
+   width: 95%;
+   height: 100%;
+ 
+}
+
+.singIn_loader,.loader {
+    margin-top: 35%;
+    margin-left: 40%;
+    border: 8px solid rgb(52, 152, 219);  /* Light grey */
+    border-top: 8px solid rgb(252, 78, 15);/* Blue */
+    border-bottom: 8px solid rgb(252, 78, 15);
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    z-index: 1px;
+   
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .isvalid-feedback{
+    font-size: 13px;
+  }
+  .home-btn:hover{
+    cursor: pointer;
+  }
+
+  .sing-text-logo{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .sing-text-logo{
+    letter-spacing: 3px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+   
+  }
+  .sing-text-logo:hover{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 5px
+  }
+  #addsubmit:hover{
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    letter-spacing: 3px
+  }
+  #joinus:hover{
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    letter-spacing: 3px
+  }

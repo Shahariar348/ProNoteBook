@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="icon" href="./settings.png" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    
+
+<!-- Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between" style="background-color: #e3f2fd;">
+            <a class="navbar-brand d-flex navbarIcon text-light">
+                <div class="ml-1">
+                    <img src="./settings.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                </div>
+                <div class="ml-1 d-none d-sm-block">
+                    ProNoteBook
+                </div>
+            </a>
+           <div class="text-light d-flex">
+                 <div class="btn setUsername">
+
+                 </div>
+                 <div class="d-flex btn text-muted text-center logout">
+                   <span class="d-none d-sm-block text-danger logout-text">Log out</span> <span> <i class="far fa-sign-out text-danger d-sm-none logout"></i></span>
+                </div>
+           </div>  
+</nav>
+
+<!-- Add Taskes -->
+<section >
+   <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+          <div class="get_alert_edite">
+                     
+          </div>
+      </div>
+   </div>
+     <div class="row">
+        <ul class="nav">
+            <li class="nav-item ml-2">
+              <span class="nav-link btn alert-success">
+                  <i class="fas fa-table">Table</i>
+              </span>
+            </li>
+            <li class="nav-item ml-2">
+                <span class="nav-link btn alert-success "> 
+                    <i class="fas fa-list">Task list</i>
+                </span>
+            </li> 
+            <li class="nav-item ml-2">
+                <span class="nav-link btn alert-success"  data-toggle="modal" data-target="#notebook">
+                    <i class="fal fa-book-open font-weight-bold"> Note Book </i>
+                </span>
+            </li>  
+          </ul>
+     </div>
+   </div>
+</section>
+
+<!-- All list -->
+<section class="art ">
+    <div class="container mb-1">
+      <div class="row " id="parent-view">
+            
+      </div>
+   </div>
+    <div class="load d-none">
+    <div class="loader">
+
+    </div>
+    </div>
+    <div class="container isempty d-none">
+       <div class="row">
+             <div class="col-lg-6 col-md-12  col-sm-12">
+                <img src="./Lovepik_com-450121948-A visually appealing flat illustration of project list.png" alt="todolist" class="img-fluid demo">
+                  <div class="firstEntry d-sm-block d-md-block d-none">
+                     <h3>Create Your Daily Routine's</h3>
+                     <p>Your to-do list helps you plan and manage your daily tasks and goals.</p>
+                  </div>
+             </div>
+             <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="smallde d-sm-none d-md-none d-block ">
+                <h3>Create Your Daily Routine's</h3>
+                <p>Your to-do list helps you plan and manage your daily tasks and goals.</p>
+             </div>
+             </div>
+       </div>
+    </div>
+</section>
+
+<!-- notebook modal -->
+<div class="modal fade lg" id="notebook" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+          <div class="modal-body"> 
+                <form id="shorthandnote">
+                    <div class="add-task"></div>
+                       <div class="form-group">
+                           <input type="text" class="form-control" name="type" value="shorthand"hidden>  
+                       </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Title</label>
+                          <input type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="Enter Title">
+                        </div> 
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Description</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <input type="submit"  class="btn btn-info" value="Save Data">
+                          <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-- Log out -->
+<div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+         <div class="row d-flex justify-content-center">
+             <div class="col-lg-12 col-sm-12 text-center">
+                 <h4 class="status">Logged In</h3>
+                 
+             </div>
+         </div>
+         <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-12 col-sm-12">
+              <h6 class="font-weight-bold user_name"></h5>
+              <h5 class="font-weight-bold user_phone"></h5>
+               <br>
+              
+          </div>
+         </div>
+
+        
+      </div>
+    
+      <div class="modal-footer">
+        
+          <button type="button" id="confirmLogout" class="btn btn-danger btn-block">&nbsp;&nbsp;&nbsp; Log out &nbsp;&nbsp;&nbsp;</button>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- View  modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <div class="viewDiv">
+           <div class="container vh-75">
+                <div class="row ">
+                   <div class="col-lg-12 co-md-8 col-sm-12 p-4 pviewDiv">
+                        
+                   </div>
+                      
+                </div>
+           </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="./home.js"></script>
+   
+</body>
+</html>

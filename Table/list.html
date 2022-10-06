@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Page</title>
+
+    <link rel="icon" href="./settings.png" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./list.css">
+</head>
+<body>
+         <!-- List -->
+        <div class="container">
+             <div class="row d-flex justify-content-center mt-4" style="height: 90vh;">
+                 <div class="col col-lg-8 ">
+                    <div class="card">
+                          <div class="card-header text-center">
+                                  Create Your Daliy Work List
+                          </div>
+                          
+                          <div class="card-body">
+                              <div class="row">
+                                 <div class="col">
+                                  <div class="succ-alert">
+                                    
+                                  </div>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control type" name="type" value="list" hidden>
+                                        <label for="exampleFormControlInput1">Title</label>
+                                        <input type="text" class="form-control title" name="title"  placeholder="Enter Title">
+                                      </div> 
+                                      <div class="form-group">
+                                        <label for="exampleFormControlInput1">Short Description</label>
+                                        <input type="text" class="form-control description" name="Description" placeholder="Enter Short Description">
+                                      </div>
+                                 </div>
+                              </div>
+                              
+                               <div class="row">
+                                <div class="col-lg-12">  <br>
+                                <div class="list-input-card">
+                                    <ul class="list-group list-group-flush unorderlist">                                                            
+                                       
+                                    </ul>
+                                     <div>
+                                        
+                                     </div>
+                                  </div>
+                                </div>                          
+                               </div>
+                               <br><br>
+                               <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-info add-list">Add Task </button>
+                                </div>
+                               </div>
+                          </div>
+                     </div>
+                     <div class="text-right">
+                        <br>
+                        <button type="button" class="btn btn-success save" >Save Data</button>
+                        <br>
+                        <hr>
+                        <br>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <script type="module" src="./list.js"></script>
+</body>
+</html>

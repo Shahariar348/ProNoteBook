@@ -1,0 +1,142 @@
+body{
+  background-color: rgba(211, 211, 211, 0.342);
+}
+.art{
+  margin-top: 5%;
+  
+}
+.card-headers{
+   min-height: 300px; 
+   max-width: 350px;
+   margin: 10px 0px 20px 5px;
+   box-shadow:  3px 2px 1px #00000096;
+   transition: translate 3s;
+   object-fit: cover;
+}
+
+.card-headers:hover{
+  transform: translate(5px, 10px);
+}
+
+.card-title{
+  /* width: 220px; */
+  /* height: 30px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text2{
+  height: 150px;
+  display:block;
+}
+.card-text{
+  position: absolute;
+  width:100%;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px salmon rebeccapurple;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1;
+}
+
+.navbarIcon:hover{
+  cursor: pointer;
+  font-size: 17px;
+}
+.logout-text:hover{
+ cursor: pointer;
+ font-size: 17px;
+}
+.modal-header,.modal-footer{
+  border: none;
+}
+.status{
+  border-bottom: 5px solid rgb(223, 64, 64);
+  padding: 5px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.user_name, .user_phone{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fa-book-open:hover, .fa-table:hover,.fa-list:hover{
+   opacity: 0.5;
+   font-size: 18px;
+}
+
+#search:active,#search:focus{
+   border: none;
+   box-shadow: none;
+}
+.fa-thumbs-up{
+  font-size: 22px;
+  
+}
+
+
+.get_alert_edite{
+    animation: fadeIn 5s;
+    font-style: italic;
+  	opacity: 1;
+    transform: rotate(1deg);
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+    transform: rotate(0deg);
+    font-style: italic;
+  }
+  to {
+ 	opacity: 1;
+   transform: rotate(2deg);
+   font-style: italic;
+  }
+}
+
+
+.load{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  margin-left: 50%;
+  border: 6px solid rgb(103, 107, 109);  /* Light grey */
+  border-top: 8px solid rgb(71, 226, 240);/* Blue */
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  z-index: 1px;
+ 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.demo{
+  object-fit: cover;
+}
+.firstEntry{
+ position: absolute;
+  top: 20%;
+  right: -90%;
+  font-family: fantasy;
+  padding: 10px;
+}
+.smallde{
+  font-family: fantasy;
+  padding: 10px;
+}
+
+.ddm:visited{
+ border: none;
+}
